@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OR0-wB-z5L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OR0-wB-z5L">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--View ControllerA - View Controller A-->
+        <!--View Controller A-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewControllerA" sceneMemberID="viewController">
@@ -29,7 +30,7 @@
             </objects>
             <point key="canvasLocation" x="266" y="57"/>
         </scene>
-        <!--View ControllerB - View Controller B-->
+        <!--View Controller B-->
         <scene sceneID="Zhg-Jm-qgU">
             <objects>
                 <viewController id="ZlM-8g-3gV" customClass="ViewControllerB" sceneMemberID="viewController">
@@ -54,7 +55,26 @@
             </objects>
             <point key="canvasLocation" x="652" y="55"/>
         </scene>
-        <!--View ControllerC - View Controller C-->
+        <!--View Controller-->
+        <scene sceneID="tWx-DZ-6lx">
+            <objects>
+                <viewController id="tAL-O4-kzA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cKM-Pe-Alj"/>
+                        <viewControllerLayoutGuide type="bottom" id="348-iB-2eg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ePA-Al-4Lr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cGe-8o-ZKT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUG-eA-HCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490" y="57"/>
+        </scene>
+        <!--View Controller C-->
         <scene sceneID="6tj-im-K2W">
             <objects>
                 <viewController id="f2M-zF-VUv" customClass="ViewControllerC" sceneMemberID="viewController">
@@ -67,7 +87,20 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="View Controller C" id="XJD-FI-2cQ"/>
+                    <navigationItem key="navigationItem" title="View Controller C" id="XJD-FI-2cQ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Dc9-PH-sIk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="diw-CC-rk4">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <segue destination="tAL-O4-kzA" kind="push" identifier="FromCToD" id="PiI-BM-2Pm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtd-Pa-Hfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
